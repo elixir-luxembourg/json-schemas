@@ -52,4 +52,5 @@ This repository stores JSON schemas used for validation of data by ELIXIR-LU too
 
 ```bash
    git push origin --tag
+   git push origin
 ```
