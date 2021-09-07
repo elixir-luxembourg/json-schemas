@@ -84,11 +84,11 @@ BASE_URI='https:\/\/raw.githubusercontent.com\/elixir-luxembourg\/json-schemas'
 find schemas/ -type f -exec sed -i "s/$BASE_URI\/v$BASE_STRING/https:\/\/raw.githubusercontent.com\/elixir-luxembourg\/json-schemas\/v$INPUT_STRING/g" {} \;
 find tests/ -type f -exec sed -i "s/$BASE_URI\/v$BASE_STRING/https:\/\/raw.githubusercontent.com\/elixir-luxembourg\/json-schemas\/v$INPUT_STRING/g" {} \;
 git add schemas/. tests/.
-
+git add VERSION
 # Commit all changes
 #git add CHANGELOG.md VERSION
-#git commit -m "Bump version to ${INPUT_STRING}."
-#git tag -a -m "Tag version ${INPUT_STRING}." "v$INPUT_STRING"
+git commit -m "Bump version to ${INPUT_STRING}."
+git tag -a -m "Tag version ${INPUT_STRING}." "v$INPUT_STRING"
 
 
 echo -e "${NOTICE_FLAG} Finished. Run 'git push origin --tag' to push changes to remote repository."
