@@ -76,14 +76,12 @@
         "legal_basis_codes": {
           "type": "array",
           "items": {
-            "type": "string",
             "enum": ["6.1(a)", "6.1(b)", "6.1(c)", "6.1(d)", "6.1(e)", "6.1(f)"]
           }
         },
         "personal_data_codes": {
           "type": "array",
           "items": {
-            "type": "string",
             "enum": [
               "Standard",
               "Special",
@@ -115,7 +113,6 @@
             "type": "object",
             "properties": {
               "use_class": {
-                "type": "string",
                 "enum": [
                   "NRES",
                   "GRU",
@@ -145,7 +142,6 @@
                 "type": "string"
               },
               "use_restriction_rule": {
-                "type": "string",
                 "enum": [
                   "OBLIGATION",
                   "PERMISSION",
@@ -169,7 +165,6 @@
         "data_types": {
           "type": "array",
           "items": {
-            "type": "string",
             "enum": [
               "ATAC-seq",
               "Biometric_data",
@@ -211,7 +206,6 @@
           "type": "string"
         },
         "access_category": {
-          "type": ["string", "null"],
           "enum": [
             "open_access",
             "controlled_access",
@@ -220,11 +214,9 @@
           ]
         },
         "subjects_category": {
-          "type": "string",
           "enum": ["cases", "controls", "cases_and_controls"]
         },
         "de_identification": {
-          "type": "string",
           "enum": ["anonymization", "pseudonymization"]
         },
         "consent_status": {

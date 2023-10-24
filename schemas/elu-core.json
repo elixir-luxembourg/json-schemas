@@ -43,7 +43,6 @@
             "type": "string"
           },
           "role": {
-            "type": "string",
             "enum": [
               "Principal_Investigator",
               "Researcher",

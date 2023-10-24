@@ -47,7 +47,6 @@
         "funding_sources": {
           "type": "array",
           "items": {
-            "type": "string",
             "enum": ["IMI", "H2020", "FP7", "NIH", "OTHER"]
           }
         },
