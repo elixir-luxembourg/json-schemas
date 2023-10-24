@@ -229,7 +229,7 @@
           "type": ["boolean", "null"]
         },
         "special_subjects_description": {
-          "type": "string"
+          "type": ["string", "null"]
         },
         "embargo_date": {
           "type": ["string", "null"],
