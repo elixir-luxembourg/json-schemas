@@ -22,23 +22,14 @@
           "type": "boolean"
         },
         "ethics_approval_notes": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": ["string", "null"]
         },
         "start_date": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": ["string", "null"],
           "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
         },
         "end_date": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": ["string", "null"],
           "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
         },
         "feature_terms": {
@@ -56,14 +47,7 @@
         "funding_sources": {
           "type": "array",
           "items": {
-            "type": "string",
-            "enum": [
-              "IMI",
-              "H2020",
-              "FP7",
-              "NIH",
-              "OTHER"
-            ]
+            "enum": ["IMI", "H2020", "FP7", "NIH", "OTHER"]
           }
         },
         "funding_source_description": {
@@ -85,9 +69,7 @@
                 "type": "string"
               }
             },
-            "required": [
-              "citation_string"
-            ]
+            "required": ["citation_string"]
           }
         }
       },
@@ -112,12 +94,9 @@
               ]
             }
           },
-          "required": [
-            "terms"
-          ]
+          "required": ["terms"]
         }
       }
     }
   }
 }
-

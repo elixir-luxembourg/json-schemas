@@ -1,3 +1,7 @@
 __pycache__/
 /venv/
 env/
+
+.eggs/
+.vscode/
+elixir_lu_json_schemas.egg-info/
