@@ -54,3 +54,7 @@ This repository stores JSON schemas used for validation of data by ELIXIR-LU too
    git push origin --tag
    git push origin
 ```
+
+## Acknowledgement
+
+This work was supported by [ELIXIR Luxembourg](https://elixir-luxembourg.org/).
