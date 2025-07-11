@@ -44,6 +44,11 @@ git update-index --refresh
 git diff-index --quiet HEAD --
 [  $? -ne 0 ] && echo -e "${RED}Uncommited changes were found. Please commit all changes first or stash them." && exit
 
+# Get current branch name
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+[[ "$CURRENT_BRANCH" != "master" ]] && echo -e "${WARNING_FLAG} The current branch is not master." && exit
+
+
 # Get new version
 BASE_STRING=`cat VERSION`
 
